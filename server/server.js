@@ -6,7 +6,7 @@ const formidable = require('express-formidable')
 const cloudinary = require('cloudinary')
 const { v4: uuidv4 } = require('uuid');
 const async = require('async')
-require('dotenv').config()
+require('dotenv').config({path: path.resolve(__dirname+'/.env')})
 const app = express()
 // Model
 const {User} = require('./models/userModel')
