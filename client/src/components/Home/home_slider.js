@@ -21,14 +21,11 @@ const HomeSlider = (props) => {
         }
     ]
 
-    const settings = {
-        dots: false,
+    var settings = {
+        autoplay: true,
+        dots: true,
         infinite: true,
-        speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: false
-    }
+    };
 
     const generateSlides = () => (
         slides ?
